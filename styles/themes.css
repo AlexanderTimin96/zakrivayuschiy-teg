@@ -1,0 +1,39 @@
+/* В этом файле вы опишете значения переменных в разных цветовых схемах.
+Придерживайтесь такого именования классов:
+✦ theme-dark — класс тёмной темы
+✦ theme-light — класс светлой темы
+✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
+*/
+:root.theme-dark {
+  --background-image: linear-gradient(-45deg, #512a1e, #591a32, #0c3747, #0d5242);
+  --bg-color: var(--bg-color-dark);
+  --font-color: var(--font-color-dark);
+  --main-font-weight-normal-dark: 465;
+  --main-font-weight-bold-dark: 785;
+  --main-button-text-color: var(--font-color-dark);
+  --contour: var(--heart-color-dark);
+  --sparks: var(--heart-color-light, #ff0000);
+}
+
+:root.theme-light {
+  --background-image: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  --bg-color: var(--bg-color-light);
+  --font-color: var(--font-color-light);
+  --main-font-weight-normal-light: 400;
+  --main-font-weight-bold-light: 700;
+  --main-button-text-color: var(--bg-color-light);
+  --contour: var(--font-color-light);
+  --sparks: var(--heart-color-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: var(--bg-color-dark);
+  --font-color: var(--font-color-dark);
+  --main-font-weight-normal-dark: 465;
+  --main-font-weight-bold-dark: 785;
+  --main-button-text-color: var(--font-color-dark);
+  --contour: var(--heart-color-dark);
+  --sparks: var(--heart-color-light, #ff0000);
+  }
+}

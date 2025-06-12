@@ -1,0 +1,21 @@
+/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --bg-color-light: #c5c5c5;
+  --font-color-light: #000;
+  --bg-color-dark: #000;
+  --font-color-dark: #c5c5c5;
+  --heart-color-light: #ff0000;
+  --heart-color-dark: #cc0000;
+
+  --main-font-family: "Inter", sans-serif;
+  --accent-font-family: "PressStart2P", fantasy;
+  --main-font-weight-normal: var(--main-font-weight-normal-light);
+  --main-font-weight-bold: var(--main-font-weight-bold-light);
+  --bg-color: var(--bg-color-light, #c5c5c5);
+  --font-color: var(--font-color-light, #000);
+  --bg-image: var(--gradient-for-light);
+  --main-button-text-color: var(--bg-color, #c5c5c5);
+  --contour: var(--font-color-light, #000);
+  --core-heart: var(--bg-color-light, ##c5c5c5);
+  --sparks: var(--heart-color-light, #ff0000);
+}
